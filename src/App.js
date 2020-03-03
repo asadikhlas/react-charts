@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import LineChart from './Components/LineCharts/LineChart'
+import BarChart from './Components/BarChart/BarChart'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundImage:'linear-gradient(180deg,#dfedf0,#e6dada)'}} >
+      <div style={{padding:'20px'}}>
+      <LineChart />
+      <BarChart />
     </div>
-  );
-}
+    </div>
+  )}
 
-export default App;
+export default App
